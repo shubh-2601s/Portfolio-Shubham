@@ -108,6 +108,94 @@
   word-wrap: break-word;
 }
 
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modal {
+  background-color: #222;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px 40px;
+  box-shadow: 0 0 40px rgba(3, 218, 198, 0.6);
+  color: #eee;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 15px rgba(3, 218, 198, 0.4);
+}
+
+.modal h3 {
+  font-size: 2rem;
+  color: #03dac6;
+  margin-bottom: 16px;
+}
+
+.modal p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 28px;
+  max-width: 100%;
+}
+
+.modal .btn {
+  background-color: #03dac6;
+  color: #000;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.modal .btn:hover {
+  background-color: #01b3a7;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #03dac6;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #01b3a7;
+}
+
 /* ✅ Mobile: Stack cards vertically */
 @media (max-width: 600px) {
   .projects-section {

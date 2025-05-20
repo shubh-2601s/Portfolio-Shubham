@@ -10,25 +10,26 @@ const projects = [
   {
     title: 'Deepfake Detector',
     description: 'Detects AI-generated images/videos using Python and ML.',
-    details: 'An advanced system built with Python, OpenCV, and TensorFlow that leverages CNNs to analyze artifacts in images and videos, effectively distinguishing real media from manipulated content.',
+    details: 'CNN-powered system using OpenCV and TensorFlow to spot deepfake media accurately.',
     image: deepfakeImg,
     link: 'https://github.com/shubh-2601s/Ai-powered-deepfake-detection-system'
   },
   {
     title: 'Mental Health Wellness System',
-    description: 'Web app with enhanced AI-based features for mental health tracking and assessment.',
-    details: 'A Mental health wellness system for understanding and enhancing emotional well-being through a multimodal approach combining facial emotion recognition, mood journaling, speech pattern analysis to assess users’ mental states.',
+    description: 'AI-driven web app for tracking and improving mental health.',
+    details: 'Integrates facial emotion analysis and mood journaling for personalized mental wellness.',
     image: mentalhealthImg,
     link: '#'
   },
   {
     title: 'Image Stitching & Thermal Analysis',
-    description: 'Panoramic optical/thermal image generation and analysis.',
-    details: 'Combines live optical and thermal camera feeds into stitched panoramic images. Highlights heat zones and overlays them on visuals using OpenCV and Python.',
+    description: 'Generates panoramic images combining optical and thermal data.',
+    details: 'Stitches camera feeds and highlights heat zones using OpenCV for real-time analysis.',
     image: imagestitchImg,
     link: '#'
   }
 ];
+
 
 
 const Projects = () => {

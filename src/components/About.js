@@ -8,7 +8,6 @@ const About = () => {
       <div className="container">
         <h2 className="section-title">About Me</h2>
        
-        
         <p className="about-summary">
           I'm <strong>Shubham S</strong>, a passionate B.Tech Computer Science Engineering student from Chennai, Tamil Nadu.
           I specialize in Python, C, Java, and love building innovative software and AI-driven solutions. My mission is to
@@ -75,20 +74,6 @@ const About = () => {
               <li>Organized hackathons, symposiums, and outreach programs</li>
             </ul>
           </div>
-        </div>
-
-        <div className="contact-links">
-          <h3>Contact</h3>
-          <p>📞 +91 98401 88163</p>
-          <p>📧 10221shubham.s@gmail.com</p>
-          <p>
-            <a href="https://linkedin.com/in/s-shubham-14ba6a283" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a> |{" "}
-            <a href="https://github.com/shubh-2601s" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-          </p>
         </div>
       </div>
     </section>
