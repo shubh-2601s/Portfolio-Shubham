@@ -12,20 +12,18 @@
   overflow-x: auto;
   padding-bottom: 15px;
   scroll-padding-left: 40px;
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
-  scrollbar-width: thin; /* Firefox scrollbar style */
-  scrollbar-color: #03dac6 transparent; /* color the scrollbar */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #03dac6 transparent;
 }
 
 /* Custom scrollbar for Webkit browsers */
 .project-grid::-webkit-scrollbar {
   height: 8px;
 }
-
 .project-grid::-webkit-scrollbar-track {
   background: transparent;
 }
-
 .project-grid::-webkit-scrollbar-thumb {
   background-color: #03dac6;
   border-radius: 4px;
@@ -40,7 +38,6 @@
   flex-direction: column;
   width: 320px;
 }
-
 .project-card:hover {
   transform: translateY(-8px);
 }
@@ -89,7 +86,6 @@
   user-select: none;
   transition: background-color 0.3s ease;
 }
-
 .project-content .btn:hover {
   background-color: #01b3a7;
 }
@@ -112,33 +108,26 @@
   word-wrap: break-word;
 }
 
-/* Responsive styles for mobile phones */
+/* ✅ Mobile: Stack cards vertically */
 @media (max-width: 600px) {
   .projects-section {
     padding: 60px 20px;
   }
 
-  /* Change grid to one column for vertical stacking on mobile */
   .project-grid {
-    display: grid;
-    grid-auto-flow: row; /* stack rows vertically */
-    grid-auto-columns: auto; /* let width be automatic */
-    grid-template-columns: 1fr; /* one full width column */
-    gap: 30px;
-    overflow-x: visible; /* no horizontal scroll */
-    padding-bottom: 0;
-    scrollbar-width: none; /* hide scrollbar */
-  }
-  .project-grid::-webkit-scrollbar {
-    display: none;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-x: hidden !important;
+    gap: 24px !important;
+    padding-bottom: 0 !important;
   }
 
   .project-card {
-    width: 100%; /* full container width */
+    width: 100% !important;
   }
 
   .project-image {
-    height: 180px; /* smaller image height on mobile */
+    height: 160px;
   }
 
   .project-content {
@@ -146,19 +135,19 @@
   }
 
   .project-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
   }
 
   .project-content p {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .project-content .btn {
     font-size: 1rem;
     padding: 12px 18px;
-    width: 100%; /* full width button */
+    width: 100%;
     box-sizing: border-box;
   }
 }
