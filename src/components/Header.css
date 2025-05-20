@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  .header {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease forwards;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;    /* Center content horizontally */
+  }
+  
+  /* Header Title */
+  .header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #ffd600;
+  }
+  
+  /* Typed Text */
+  .typed-text {
+    font-size: 1.7rem;
+    color: #03dac6;
+    margin-bottom: 20px;
+    font-weight: 500;
+    display: block;
+  }
+  
+  /* Header Paragraph */
+  .header p {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 14px 30px;
+    background-color: #03dac6;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(3, 218, 198, 0.4);
+  }
+  
+  .btn:hover {
+    background-color: #01b3a7;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(1, 179, 167, 0.6);
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;        /* Arrange buttons in a row */
+    gap: 20px;            /* Space between buttons */
+    margin-top: 20px;     /* Add space above buttons */
+  }
+  
+  /* Animation for Header */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .typed-text {
+      font-size: 1.3rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      font-size: 0.95rem;
+      padding: 12px 25px;
+    }
+  
+    /* Adjust Button Container on smaller screens */
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px;              /* Reduce space between buttons */
+    }
+  }
+  .tagline {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+  

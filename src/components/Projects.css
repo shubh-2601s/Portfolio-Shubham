@@ -1,0 +1,96 @@
+.projects-section {
+  background-color: #181818;
+  color: #fff;
+  padding: 100px 40px; /* bigger padding */
+}
+
+.project-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 320px; /* wider columns */
+  gap: 40px;                /* more gap */
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.project-card {
+  background-color: #2a2a2a;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  height: 220px;  /* taller images */
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 28px;  /* more padding */
+  flex-grow: 1;
+  text-align: left; /* better text alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-content h3 {
+  color: #03dac6;
+  font-size: 1.8rem;  /* bigger title */
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.project-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: #ddd;
+  flex-grow: 1;
+}
+
+.project-content .btn {
+  background-color: #03dac6;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 14px 22px;
+  display: inline-block;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-content .btn:hover {
+  background-color: #01b3a7;
+}
+
+.ongoing-msg {
+  color: #ff6600;
+  font-style: italic;
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Modal text styling */
+.modal p {
+  text-align: justify;       /* Justify text for neat edges */
+  line-height: 1.6;          /* Comfortable line spacing */
+  font-size: 1.15rem;        /* Slightly bigger font for readability */
+  color: #eee;               /* Soft white for contrast */
+  margin: 20px 0;            /* Vertical spacing */
+  max-width: 100%;           /* Ensure it doesn’t overflow */
+  word-wrap: break-word;     /* Prevent overflow on long words */
+}

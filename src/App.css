@@ -1,0 +1,175 @@
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #03dac6;
+}
+
+/* Header styled similarly to section (not full viewport height) */
+header {
+  /* remove height: 100vh; */
+  min-height: 100vh; /* keep same minimum height as sections */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  padding: 80px 20px;      /* same padding as sections */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sections covering full viewport height */
+section {
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+/* Buttons */
+button, .btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  background-color: #03dac6;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+  background-color: #01b3a7;
+  transform: translateY(-2px);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Contact Section — reduced size and adjusted padding */
+.contact-section {
+  min-height: auto;       /* disables full viewport height */
+  padding: 40px 20px;     /* smaller vertical padding */
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a.btn {
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  min-width: 130px;
+  text-align: center;
+}
+
+.contact-links a.btn:hover,
+.contact-links a.btn:focus {
+  background-color: #574de8;
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.contact-links a.btn:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  section, header {
+    padding: 60px 15px;
+  }
+}
