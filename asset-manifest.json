@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio-shubham/static/css/main.ef4a0b8a.css",
+    "main.css": "/portfolio-shubham/static/css/main.0226fa6d.css",
     "main.js": "/portfolio-shubham/static/js/main.bb1c377b.js",
     "static/media/imagestitch.png": "/portfolio-shubham/static/media/imagestitch.7bd1474b06205bf3ee4b.png",
     "static/media/deepfake.png": "/portfolio-shubham/static/media/deepfake.3465100ef8a05ebf79d0.png",
     "static/media/mentalhealth.png": "/portfolio-shubham/static/media/mentalhealth.5a45068e99205ab75969.png",
     "index.html": "/portfolio-shubham/index.html",
-    "main.ef4a0b8a.css.map": "/portfolio-shubham/static/css/main.ef4a0b8a.css.map",
+    "main.0226fa6d.css.map": "/portfolio-shubham/static/css/main.0226fa6d.css.map",
     "main.bb1c377b.js.map": "/portfolio-shubham/static/js/main.bb1c377b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef4a0b8a.css",
+    "static/css/main.0226fa6d.css",
     "static/js/main.bb1c377b.js"
   ]
 }
