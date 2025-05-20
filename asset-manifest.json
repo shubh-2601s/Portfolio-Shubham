@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-shubham/static/css/main.e76d29db.css",
+    "main.js": "/portfolio-shubham/static/js/main.541ae409.js",
+    "static/media/imagestitch.png": "/portfolio-shubham/static/media/imagestitch.7bd1474b06205bf3ee4b.png",
+    "static/media/deepfake.png": "/portfolio-shubham/static/media/deepfake.3465100ef8a05ebf79d0.png",
+    "static/media/mentalhealth.png": "/portfolio-shubham/static/media/mentalhealth.5a45068e99205ab75969.png",
+    "index.html": "/portfolio-shubham/index.html",
+    "main.e76d29db.css.map": "/portfolio-shubham/static/css/main.e76d29db.css.map",
+    "main.541ae409.js.map": "/portfolio-shubham/static/js/main.541ae409.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e76d29db.css",
+    "static/js/main.541ae409.js"
+  ]
+}
