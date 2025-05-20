@@ -15,7 +15,7 @@ function Contact() {
           Email Me
         </a>
         <a
-          href="linkedin.com/in/s-shubham-14ba6a283"
+          href="https://linkedin.com/in/s-shubham-14ba6a283"
           className="btn"
           target="_blank"
           rel="noreferrer noopener"
