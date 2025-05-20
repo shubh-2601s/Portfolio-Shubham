@@ -31,7 +31,6 @@
   border-radius: 4px;
 }
 
-/* Project card styling remains the same */
 .project-card {
   background-color: #2a2a2a;
   border-radius: 14px;
@@ -113,24 +112,33 @@
   word-wrap: break-word;
 }
 
-/* Responsive styles for mobile phones - keep horizontal scrolling */
+/* Responsive styles for mobile phones */
 @media (max-width: 600px) {
   .projects-section {
     padding: 60px 20px;
   }
 
+  /* Change grid to one column for vertical stacking on mobile */
   .project-grid {
-    grid-auto-columns: 280px; /* slightly narrower cards on mobile */
-    gap: 24px;
-    padding-bottom: 20px;
+    display: grid;
+    grid-auto-flow: row; /* stack rows vertically */
+    grid-auto-columns: auto; /* let width be automatic */
+    grid-template-columns: 1fr; /* one full width column */
+    gap: 30px;
+    overflow-x: visible; /* no horizontal scroll */
+    padding-bottom: 0;
+    scrollbar-width: none; /* hide scrollbar */
+  }
+  .project-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .project-card {
-    width: 280px;
+    width: 100%; /* full container width */
   }
 
   .project-image {
-    height: 160px; /* smaller image height */
+    height: 180px; /* smaller image height on mobile */
   }
 
   .project-content {
@@ -138,19 +146,19 @@
   }
 
   .project-content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
   .project-content p {
     font-size: 1rem;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   .project-content .btn {
     font-size: 1rem;
     padding: 12px 18px;
-    width: 100%;
+    width: 100%; /* full width button */
     box-sizing: border-box;
   }
 }

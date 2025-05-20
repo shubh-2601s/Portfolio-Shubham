@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Mental Health Wellness System',
     description: 'Web app with enhanced AI-based features for mental health tracking and assessment.',
-    details: 'An AI-powered mental health wellness system that supports users in understanding and enhancing their emotional well-being through a multimodal approach combining facial emotion recognition, mood journaling, speech pattern analysis to assess users’ mental states.',
+    details: 'A Mental health wellness system for understanding and enhancing emotional well-being through a multimodal approach combining facial emotion recognition, mood journaling, speech pattern analysis to assess users’ mental states.',
     image: mentalhealthImg,
     link: '#'
   },
