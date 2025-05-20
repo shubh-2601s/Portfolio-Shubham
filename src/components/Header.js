@@ -12,7 +12,7 @@ function Header() {
         
         <ReactTyped
           className="typed-text"
-          strings={['Full Stack Developer', 'AI Enthusiast', 'Tech Explorer','DSA Lover']}
+          strings={['Full Stack Developer', 'AI Enthusiast', 'Tech Explorer','DSA Freak']}
           typeSpeed={50}
           backSpeed={40}
           loop
