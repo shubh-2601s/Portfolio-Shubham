@@ -10,14 +10,14 @@ const projects = [
   {
     title: 'Deepfake Detector',
     description: 'Detects AI-generated images/videos using Python and ML.',
-    details: 'An advanced system built with Python, OpenCV, and TensorFlow that leverages convolutional neural networks (CNNs) to analyze artifacts in images and videos, effectively distinguishing real media from manipulated content. By examining facial movements, blinking patterns, and pixel-level inconsistencies, the model achieves high accuracy in detecting deepfakes. Trained on extensive datasets, it combines spatial and temporal analysis through a novel hybrid detection approach, enabling real-time identification of suspicious content.',
+    details: 'An advanced system built with Python, OpenCV, and TensorFlow that leverages CNNs to analyze artifacts in images and videos, effectively distinguishing real media from manipulated content.',
     image: deepfakeImg,
     link: 'https://github.com/shubh-2601s/Ai-powered-deepfake-detection-system'
   },
   {
     title: 'Mental Health Wellness System',
     description: 'Web app with enhanced AI-based features for mental health tracking and assessment.',
-    details: 'An AI-powered mental health wellness system that supports users in understanding and enhancing their emotional well-being through a multimodal approach. Combines facial emotion recognition, mood journaling, speech pattern analysis to assess users’ mental states. By analyzing tone, pitch, and speech pauses, it detects stress, anxiety, or low mood indicators.',
+    details: 'An AI-powered mental health wellness system that supports users in understanding and enhancing their emotional well-being through a multimodal approach combining facial emotion recognition, mood journaling, speech pattern analysis to assess users’ mental states.',
     image: mentalhealthImg,
     link: '#'
   },
