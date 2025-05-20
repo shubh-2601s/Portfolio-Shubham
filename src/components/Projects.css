@@ -1,19 +1,37 @@
 .projects-section {
   background-color: #181818;
   color: #fff;
-  padding: 100px 40px; /* bigger padding */
+  padding: 100px 40px;
 }
 
 .project-grid {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 320px; /* wider columns */
-  gap: 40px;                /* more gap */
+  grid-auto-columns: 320px;
+  gap: 40px;
   overflow-x: auto;
   padding-bottom: 15px;
-  scroll-padding-left: 40px; /* nice scroll spacing on mobile */
+  scroll-padding-left: 40px;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  scrollbar-width: thin; /* Firefox scrollbar style */
+  scrollbar-color: #03dac6 transparent; /* color the scrollbar */
 }
 
+/* Custom scrollbar for Webkit browsers */
+.project-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.project-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-grid::-webkit-scrollbar-thumb {
+  background-color: #03dac6;
+  border-radius: 4px;
+}
+
+/* Project card styling remains the same */
 .project-card {
   background-color: #2a2a2a;
   border-radius: 14px;
@@ -30,14 +48,14 @@
 
 .project-image {
   width: 100%;
-  height: 220px;  /* taller images */
+  height: 220px;
   object-fit: cover;
 }
 
 .project-content {
-  padding: 28px;  /* more padding */
+  padding: 28px;
   flex-grow: 1;
-  text-align: left; /* better text alignment */
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,7 +63,7 @@
 
 .project-content h3 {
   color: #03dac6;
-  font-size: 1.8rem;  /* bigger title */
+  font-size: 1.8rem;
   margin-bottom: 14px;
   line-height: 1.2;
 }
@@ -85,35 +103,34 @@
   font-size: 1.1rem;
 }
 
-/* Modal text styling */
 .modal p {
-  text-align: justify;       /* Justify text for neat edges */
-  line-height: 1.6;          /* Comfortable line spacing */
-  font-size: 1.15rem;        /* Slightly bigger font for readability */
-  color: #eee;               /* Soft white for contrast */
-  margin: 20px 0;            /* Vertical spacing */
-  max-width: 100%;           /* Ensure it doesn’t overflow */
-  word-wrap: break-word;     /* Prevent overflow on long words */
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.15rem;
+  color: #eee;
+  margin: 20px 0;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
-/* Responsive styles for mobile phones */
+/* Responsive styles for mobile phones - keep horizontal scrolling */
 @media (max-width: 600px) {
   .projects-section {
     padding: 60px 20px;
   }
 
   .project-grid {
-    display: block; /* stack cards vertically */
-    padding-bottom: 0;
+    grid-auto-columns: 280px; /* slightly narrower cards on mobile */
+    gap: 24px;
+    padding-bottom: 20px;
   }
 
   .project-card {
-    width: 100%; /* full width */
-    margin-bottom: 30px;
+    width: 280px;
   }
 
   .project-image {
-    height: 180px; /* slightly shorter on small screens */
+    height: 160px; /* smaller image height */
   }
 
   .project-content {
@@ -121,19 +138,19 @@
   }
 
   .project-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
   }
 
   .project-content p {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .project-content .btn {
     font-size: 1rem;
     padding: 12px 18px;
-    width: 100%; /* button full width on mobile */
+    width: 100%;
     box-sizing: border-box;
   }
 }
