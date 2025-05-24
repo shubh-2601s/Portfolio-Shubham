@@ -26,7 +26,10 @@ function Header() {
         <div className="button-container">
           <a href="#projects" className="btn">View Projects</a>
           <a href="#about" className="btn">View About</a>
-          <a href="/resume.pdf" className="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          <a href={`${process.env.PUBLIC_URL}/resume.pdf`} className="btn" target="_blank" rel="noopener noreferrer">
+  Download Resume
+</a>
+
         </div>
       </div>
     </header>
