@@ -10,7 +10,7 @@ function Navbar() {
         <li><a href="#header">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+        <li><a href={`${process.env.PUBLIC_URL}/resume.pdf`} className="btn" target="_blank" rel="noopener noreferrer"></li>
       </ul>
     </nav>
   );
