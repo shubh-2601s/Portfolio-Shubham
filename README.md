@@ -100,26 +100,26 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 
-git clone https://github.com/shubh-2601s/portfolio-shubham.git
+  git clone https://github.com/shubh-2601s/portfolio-shubham.git
 
 
 2. Navigate into the project directory:
 
-cd portfolio-shubham
+  cd portfolio-shubham
   
 
 3. Install dependencies:
 
-npm install
+  npm install
 
 4. Start the development server:
 
-npm start
+  npm start
 
 
 5. Open your browser and visit:
 
-http://localhost:3000
+  http://localhost:3000
 
 ---
 
