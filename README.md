@@ -164,8 +164,10 @@ Contributions are welcome. If you find issues or want to add enhancements:
 ## Contact
 
 Shubham S
+
 GitHub: [https://github.com/shubh-2601s](https://github.com/shubh-2601s)
-Email: *(Add your email here if you want)*
+
+Email: 10221shubham.s@gmail.com
 
 ---
 
